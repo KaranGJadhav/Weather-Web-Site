@@ -1,5 +1,5 @@
 //Client side javascript
-console.log("Client side Javascript");
+//console.log("Client side Javascript");
 
 //fetch('http://localhost:5040/weather?address=Delhi').then((response)=>{
 	
