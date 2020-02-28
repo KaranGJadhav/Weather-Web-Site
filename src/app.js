@@ -6,7 +6,7 @@ const request = require('request');
 const geocode = require('../src/utils/geocode')
 const forecast = require('../src/utils/forecast')
 const app = express();
-
+const port = process.env.PORT || 5040
 //Define path for express config
 const publicDirectory = path.join(__dirname,'../public');
 const viewsPath = path.join(__dirname,'../templates/views');
@@ -185,9 +185,9 @@ app.get('*',(req,res)=>{
 	
 });
 
-app.listen(5040,()=>{
+app.listen(port,()=>{
 	
-	console.log('Server is connected to port 5040....');
+	console.log('Server is connected to port '+port);
 	
 	
 });
