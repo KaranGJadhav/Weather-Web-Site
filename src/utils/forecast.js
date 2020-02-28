@@ -21,7 +21,7 @@ const forecast = (co1,co2, callback)=>{
 		else {
 			callback(undefined,{
 				
-				'forecast': response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. There is a ' + response.body.currently.precipProbability + '% chance of rain. '+ 'Highest temprature of the day is '+ response.body.daily.data[0].temperatureHigh + 'Lowest temprature of the day is '+ response.body.daily.data[0].temperatureLow,
+				'forecast': response.body.daily.data[0].summary + ' It is currently ' + response.body.currently.temperature + ' degress out. There is a ' + response.body.currently.precipProbability + '% chance of rain. '+ 'Highest temprature of the day is '+ response.body.daily.data[0].temperatureHigh + ' Lowest temprature of the day is '+ response.body.daily.data[0].temperatureLow,
 				'apparentTemperature':response.body.currently.apparentTemperature,
 				'precipProbability':response.body.currently.precipProbability,
 				'location':response.body.timezone,
